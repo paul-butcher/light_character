@@ -1,5 +1,5 @@
 from io import BytesIO
-from behave import *
+from behave import given, when, then, use_step_matcher
 from PIL import Image, ImageColor
 
 from light_character.light_character import save_characteristic_as_image
