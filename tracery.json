@@ -1,0 +1,7 @@
+{
+"origin": ["#with_period# #colour# #period#"],
+"colour":["R", "G", "W", "Y"],
+"period":["#number#s"],
+"with_period":["Fl.", "Oc.","Iso."],
+"number":["3","5","8","10","12","15","18","20"]
+}
