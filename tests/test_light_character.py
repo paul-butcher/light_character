@@ -150,25 +150,3 @@ def test_single_quick_flash():
         [1], 'Y', None
     ) == [('Y', 250), ('Off', 750)]
 
-#
-# def test_group_quick_flash():
-#     """
-#     In a group, they are just as short. The gap between each is 0.5s
-#     """
-#     assert light_character.quick([2], 'R', 6000) == [
-#         ('R', 250), ('Off', 500),
-#         ('R', 250), ('Off', 500),
-#         ('Off', 3500)
-#     ]
-#
-#
-# def test_composite_group_quick_flash():
-#     """
-#     """
-#     assert light_character.quick([2, 1], 'R', 20000) == [
-#         ('R', 2000), ('Off', 3000),
-#         ('R', 2000), ('Off', 3000),
-#         ('Off', 2500),
-#         ('R', 2000), ('Off', 3000),
-#         ('Off', 2500)
-#     ]
