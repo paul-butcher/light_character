@@ -1,4 +1,4 @@
-.PHONY: clean clean-test clean-pyc clean-build docs help
+.PHONY: clean clean-test clean-pyc clean-build docs featuredocs help
 .DEFAULT_GOAL := help
 
 define BROWSER_PYSCRIPT
@@ -63,10 +63,12 @@ coverage: ## check code coverage quickly with the default Python
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
-docs: ## generate Sphinx HTML documentation, including API docs
+featuredocs: ## generate sphinx rst files from Gherkin features
+	sphinx-gherkindoc features docs/features
+
+docs: featuredocs ## generate Sphinx HTML documentation, including API docs
 	rm -f docs/light_character.rst
 	rm -f docs/modules.rst
-	sphinx-gherkindoc features docs/features
 	sphinx-apidoc -o docs/ light_character
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
