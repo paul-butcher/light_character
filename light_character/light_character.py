@@ -85,6 +85,7 @@ def characteristic_to_light_states(description):
     state of light at any given time.
 
     A fixed light is the given colour, permanently
+
     >>> characteristic_to_light_states('F. R')
     [('R', 1)]
     """
@@ -115,18 +116,22 @@ def parse_period(fragments):
     Given the split up characteristic, return the period in milliseconds
 
     The period is specified in seconds
+
     >>> parse_period(['2'])
     2000
 
     The letter 's' to mark the units may be present
+
     >>> parse_period(['3s'])
     3000
 
     It may be separated from the number by a space
+
     >>> parse_period(['4','s'])
     4000
 
     A Quick flash can only have a period if it has groups
+
     >>> parse_period(['3s'])
     3000
     """
@@ -274,20 +279,24 @@ def flash(groups, colour, period):
     a longer period of darkness
 
     A single flash of a given colour is a 1 second flash
+
     >>> flash([1], 'R', 5000)
     [('R', 1000), ('Off', 4000)]
 
     Grouped flashes have a shorter duration
+
     >>> flash([3], 'R', 10000)
     [('R', 500), ('Off', 1000), ('R', 500), ('Off', 1000), ('R', 500),\
  ('Off', 1000), ('Off', 5500)]
 
     Composite groups are separated by an even period of darkness
+
     >>> flash([3, 1], 'R', 10000)
     [('R', 500), ('Off', 1000), ('R', 500), ('Off', 1000), ('R', 500),\
  ('Off', 1000), ('Off', 2000), ('R', 500), ('Off', 1000), ('Off', 2000)]
 
     The total duration of all states matches the requested period
+
     >>> sum((state[1] for state in flash([1], 'R', 5000))) == 5000
     True
     """
