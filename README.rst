@@ -3,11 +3,11 @@ Light Character
 ===============
 
 
-.. image:: https://img.shields.io/pypi/v/light_character.svg
-        :target: https://pypi.python.org/pypi/light_character
+.. image:: https://img.shields.io/pypi/v/light-character.svg
+        :target: https://pypi.python.org/pypi/light-character
 
 .. image:: https://github.com/paul-butcher/light_character/workflows/Python%20Tests/badge.svg
-    :alt: Test status
+        :alt: Test status
 
 .. image:: https://readthedocs.org/projects/light-character/badge/?version=latest
         :target: https://light-character.readthedocs.io/en/latest/?badge=latest
@@ -16,7 +16,9 @@ Light Character
 
 
 
-Light Character illustrates light characteristics as found on charts and light lists
+Light Character illustrates light characteristics as found on charts and light lists.
+It is not intended as a navigational aid, it simply gives an idea as to how
+a given light characteristic might appear.
 
 
 * Free software: MIT license
