@@ -23,10 +23,6 @@ Light Character illustrates light characteristics as found on charts and light l
 * Documentation: https://light-character.readthedocs.io.
 
 
-Features
---------
-
-
 
 Credits
 -------

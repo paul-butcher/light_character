@@ -157,19 +157,23 @@ def parse_pattern(pattern):
     and optionally a group designation in parentheses.
 
     The pattern definition could just be the type
+
     >>> parse_pattern('Fl')
     ('fl', [1])
 
     It could have optional dots marking the abbreviation,
     these can be discarded
+
     >>> parse_pattern('L.Fl.')
     ('lfl', [1])
 
     It could have grouping information in parentheses
+
     >>> parse_pattern('Fl(2)')
     ('fl', [2])
 
     The group could be a composite group.
+
     >>> parse_pattern('Oc(2+1)')
     ('oc', [2, 1])
     """
@@ -189,10 +193,12 @@ def collapse_states(states):
     same state.
 
     If there are no adjacent matching states, there is no change to the output
+
     >>> collapse_states([('R',1), ('Y', 1), ('R', 1)])
     [('R', 1), ('Y', 1), ('R', 1)]
 
     Adjacent states are collapsed, summing their durations
+
     >>> collapse_states([('R',1), ('R', 1), ('Y', 1)])
     [('R', 2), ('Y', 1)]
 

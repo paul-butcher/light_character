@@ -12,6 +12,7 @@ Welcome to Light Character's documentation!
    contributing
    authors
    history
+   features/gherkin
 
 Indices and tables
 ==================
