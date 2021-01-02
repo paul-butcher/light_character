@@ -6,8 +6,8 @@ Light Character
 .. image:: https://img.shields.io/pypi/v/light_character.svg
         :target: https://pypi.python.org/pypi/light_character
 
-.. image:: https://img.shields.io/travis/paul-butcher/light_character.svg
-        :target: https://travis-ci.com/paul-butcher/light_character
+.. image:: https://github.com/paul-butcher/light_character/workflows/Python%20Tests/badge.svg
+    :alt: Test status
 
 .. image:: https://readthedocs.org/projects/light-character/badge/?version=latest
         :target: https://light-character.readthedocs.io/en/latest/?badge=latest
