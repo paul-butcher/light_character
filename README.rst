@@ -14,11 +14,12 @@ Light Character
         :alt: Documentation Status
 
 
-
+.. image:: docs/_static/header.gif
 
 Light Character illustrates light characteristics as found on charts and light lists.
 It is not intended as a navigational aid, it simply gives an idea as to how
 a given light characteristic might appear.
+
 
 
 * Free software: MIT license
@@ -31,5 +32,10 @@ Credits
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+Images of lighthouses are from the `Royal Museums Greenwich`_ collection,
+via Europeana_
+
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`Royal Museums Greenwich`: https://www.rmg.co.uk/
+.. _Europeana: https://www.europeana.eu/
