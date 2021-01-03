@@ -8,7 +8,7 @@ from PIL import Image
 
 
 LIGHTHOUSES_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    os.path.dirname(os.path.abspath(__file__)),
     'lighthouses'
 )
 
@@ -22,14 +22,14 @@ COLOURS = {
 
 
 def save_characteristic_as_image(
-    description, size, write_buffer, base_img=None
+    characteristic, size, write_buffer, base_img=None
 ):
 
     on_img, off_img = load_base_images(base_img)
     size = on_img.size if on_img is not None else size
 
     frames, durations = states_to_frames(
-        size, collapse_states(characteristic_to_light_states(description)),
+        size, collapse_states(characteristic_to_light_states(characteristic)),
         on_img, off_img
     )
     frames = [frame.convert('RGB') for frame in frames]
@@ -59,6 +59,7 @@ def save_characteristic_as_image(
         )
     else:
         frames[0].save(write_buffer, format="GIF")
+    return write_buffer
 
 
 def load_base_images(base_img):

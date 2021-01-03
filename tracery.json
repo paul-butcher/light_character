@@ -3,7 +3,7 @@
         "#[this_characteristic:#characteristic#]tweet#"
     ],
     "tweet": [
-        "#this_characteristic# http://example.com?characteristic=#this_characteristic#"
+        "#this_characteristic# http://example.com?characteristic=#this_characteristic#&house=#lighthouse#"
     ],
     "characteristic": [
         "#type_without_period# #colour#",
@@ -19,5 +19,6 @@
     "type_without_period":["F.", "Q."],
     "very_low_number":["1","2","3","4","5"],
     "low_number":["3","5","8","10","12"],
-    "high_number":["10","12","15","18","20"]
+    "high_number":["10","12","15","18","20"],
+    "lighthouse": ["rough_sea_ship"]
 }

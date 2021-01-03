@@ -40,6 +40,7 @@ setup(
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
+    data_files=['lighthouses/*/*'],
     keywords='light_character',
     name='light_character',
     packages=find_packages(include=['light_character', 'light_character.*']),
