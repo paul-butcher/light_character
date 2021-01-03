@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """The setup script."""
-
+from glob import glob
 from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
@@ -40,7 +40,7 @@ setup(
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    data_files=['lighthouses/*/*'],
+    data_files=glob('lighthouses/*/*'),
     keywords='light_character',
     name='light_character',
     packages=find_packages(include=['light_character', 'light_character.*']),
